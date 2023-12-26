@@ -26,16 +26,18 @@ ul,li{
   --light_orage:#ffa641;
   --light_light_orage:#ffbc6f;
   /* font-sizes-mobile */
-  --mini_fontsize:0.526rem;
+  --mini_fontsize:0.96rem;
   --medium_fontsize:1rem;
   --main_fontsize: 1.3rem;
-  --bigger_fontsize: 1.76rem;
+  --bigger_fontsize: 1.6rem;
 }
 
 body
 {
   background-color: var(--main_black_color);
   color: var(--medium_white_color);
+  height: 100vh;
+  /* border: 2px solid white; */
 }
 
 a
@@ -45,8 +47,54 @@ a
 }
 
 
+::-webkit-scrollbar
+{
+  width: 10px;
+}
+::-webkit-scrollbar-track
+{
+  background: white;
+}
+::-webkit-slider-thumb
+{
+  background: var(--main_black_color);
+}
+
 .appjs
 {
   display: flex;
+  height: 100vh;
+}
+.page
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-y: auto;
+    height: 100vh;
+    padding: 2rem 0;
+}
+.clickButton
+{
+    font-size: var(--main_fontsize);
+    font-weight: 600;
+    color: var(--main_black_color);
+    background: var(--medium_white_color);
+    padding: 0.85rem 1.95rem;
+    height: fit-content;
+    border-radius: 0.5rem;
 }
 
+.inputButton
+{
+   font-size: var(--main_fontsize);
+    font-weight: 400;
+    color: var(--main_black_color);
+    background: var(--medium_white_color);
+    padding: 0.85rem 1.95rem;
+    height: fit-content;
+    border-radius: 0.25rem;
+    margin: 0.25rem 0;
+}

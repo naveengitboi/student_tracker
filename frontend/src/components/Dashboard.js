@@ -3,7 +3,7 @@ import { IoMdArrowDropright } from "react-icons/io";
 import { NavLink } from 'react-router-dom';
 function Dashboard(){
     return(
-        <div className="dashboardContainer">
+        <div className="dashboardContainer page">
             <div className="dashboard">
                 <div className="profileContainer">
                     <p>Hello</p>
@@ -12,18 +12,21 @@ function Dashboard(){
                 </div>
                 <div className="operationsContainer">
                     <div className="operation">
-                        <NavLink to='/attendance'>Attendance</NavLink>
-                        <div className="dashboardIcons">
-                            <IoMdArrowDropright/>
-                        </div>
+                        <NavLink to='/attendance'>Attendance
+                            <div className="dashboardIcons">
+                                <IoMdArrowDropright />
+                            </div></NavLink>
+                       
                     </div>
 
                     <div className="operation">
-                        <NavLink to='/learnings'>Learnings</NavLink>
+                        <NavLink to='/learnings'>Learnings
+                            <div className="dashboardIcons">
+                                <IoMdArrowDropright />
+                            </div>
+                        </NavLink>
 
-                        <div className="dashboardIcons">
-                            <IoMdArrowDropright />
-                        </div>
+                        
                     </div>
                     
                 </div>
