@@ -5,8 +5,13 @@
   padding: 0;
   box-sizing: border-box;
   /* fon-family */
-  font-family:'Montserrat', sans-serif;;
+  font-family:'Montserrat', sans-serif;
   
+}
+ul,li{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 :root
@@ -16,13 +21,31 @@
   --medium_white_color:#FFFFFF;
   --success_green:#78FF75;
   --danger_red: #FF7C7C;
-  --gray_color:#484848;
-  --light_gray:#7A7A7A ;
-  --light_orage:#FFD09B;
+  --black_dark_color:#0b0b0b;
+  --light_gray:#3d3d3d ;
+  --light_orage:#ffa641;
   /* font-sizes-mobile */
   --mini_fontsize:0.526rem;
   --medium_fontsize:1rem;
-  --main_fontsize: 1.25rem;
-  --bigger_fontsize: 1.6rem;
-
+  --main_fontsize: 1.3rem;
+  --bigger_fontsize: 1.76rem;
 }
+
+body
+{
+  background-color: var(--main_black_color);
+  color: var(--medium_white_color);
+}
+
+a
+{
+  text-decoration: none;
+  color: var(--medium_white_color);
+}
+
+
+.appjs
+{
+  display: flex;
+}
+
