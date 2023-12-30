@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import '../css/Attendance.css'
     let subjects = [
     {
@@ -52,8 +52,10 @@ function Attendance(){
                     }
                 </div>
                 
-                <NavLink to='/addsubject' className={'clickButton'}>Add Subjects</NavLink>
+                <NavLink to='addsubject' className={'clickButton'}>Add Subjects</NavLink>
             </div>
+
+            <Outlet/>
         </>
     )
 }

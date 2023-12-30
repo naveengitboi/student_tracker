@@ -1,0 +1,21 @@
+.addSubjectForm
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.addSubjectForm input{
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+.addSubjectForm .inputButton
+{
+    background-color: var(--success_green);
+    width: 100%;
+    margin-top: 2rem;
+    font-weight: 600;
+}

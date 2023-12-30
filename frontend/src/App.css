@@ -87,7 +87,7 @@ a
     border-radius: 0.5rem;
 }
 
-.inputButton
+.inputButton, input
 {
    font-size: var(--main_fontsize);
     font-weight: 400;
@@ -97,4 +97,12 @@ a
     height: fit-content;
     border-radius: 0.25rem;
     margin: 0.25rem 0;
+    outline: none;
+    border: none;
+}
+
+input::placeholder
+{
+  font-size: var(--mini_fontsize);
+  text-transform: uppercase;
 }
