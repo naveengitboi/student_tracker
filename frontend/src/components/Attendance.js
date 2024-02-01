@@ -1,5 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom";
 import '../css/Attendance.css'
+import Subject from "../items/Subject";
     let subjects = [
     {
         subject:"Maths",
@@ -26,7 +27,6 @@ import '../css/Attendance.css'
         absent: 5,
     },
 
-
 ]
 
 function Attendance(){
@@ -36,18 +36,7 @@ function Attendance(){
                 <div className="subjectsContainer">
                     {
                         subjects.map((item) => (
-
-                            <div className="subject">
-                                <div className="subjectInfo">
-                                    <h1>{item.subject}</h1>
-                                    <p>{item.semester} semester</p>
-                                    <p>{item.subjectType}</p>
-                                </div>
-                                <div className="subjectAttendance">
-                                    <h1>{item.present}/{item.totalClasses}</h1>
-                                </div>
-                            </div>
-
+                            <NavLink key={item.subject} to={`${item.subject}`}><Subject item={item} /></NavLink>
                         ))
                     }
                 </div>

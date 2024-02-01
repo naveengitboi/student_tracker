@@ -12,7 +12,7 @@ function Dashboard(){
                 </div>
                 <div className="operationsContainer">
                     <div className="operation">
-                        <NavLink to='/attendance'>Attendance
+                        <NavLink to='/db/attendance'>Attendance
                             <div className="dashboardIcons">
                                 <IoMdArrowDropright />
                             </div></NavLink>
