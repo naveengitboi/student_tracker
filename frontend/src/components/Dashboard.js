@@ -5,7 +5,7 @@ function Dashboard(){
     return(
         <div className="dashboardContainer page">
             <div className="dashboard">
-                <div className="profileContainer">
+                <div className="profileContainer sqaredContainer">
                     <p>Hello</p>
                     <p className='userName'>naveengitboi</p>
                     <p>X semester</p>

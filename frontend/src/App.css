@@ -15,6 +15,8 @@ li {
 }
 
 :root {
+  --box_width: 350px;
+  --box_height: 350px;
   /* color codes */
   --main_black_color: #1d1d1d;
   --medium_white_color: #ffffff;
@@ -33,19 +35,17 @@ li {
   --space_font: "Space Grotesk", sans-serif;
 }
 
-.bigFont{
+.bigFont {
   font-family: var(--monte_font);
   font-size: var(--bigger_fontsize);
   font-weight: bold;
 }
 
-.mediumFont
-{
+.mediumFont {
   font-family: var(--space_font);
   font-size: var(--medium_fontsize);
-
 }
-.miniFont{
+.miniFont {
   font-family: var(--space_font);
   font-weight: 300;
   font-size: var(--mini_fontsize);
@@ -96,8 +96,16 @@ a {
   padding: 0.85rem 1.95rem;
   height: fit-content;
   border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
-
+.successBtn {
+  background-color: var(--success_green);
+}
+.dangerBtn {
+  background-color: var(--danger_red);
+}
 .inputButton,
 input {
   font-size: var(--main_fontsize);
@@ -115,4 +123,10 @@ input {
 input::placeholder {
   font-size: var(--mini_fontsize);
   text-transform: uppercase;
+}
+
+.sqaredContainer {
+  width: var(--box_width);
+  height: var(--box_height);
+  border-radius: 0.85rem;
 }

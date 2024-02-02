@@ -14,10 +14,7 @@
 
 .profileContainer
 {
-    width: 350px;
-    height: 350px;
     background-image: radial-gradient(var(--light_light_orage), var(--light_orage));
-    border-radius: 0.85rem;
     display: flex;
     justify-content: center;
     align-items: center;

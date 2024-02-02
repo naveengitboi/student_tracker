@@ -8,6 +8,7 @@ import Attendance from './components/Attendance';
 import AddSubject from './components/AddSubject';
 import PageNotFound from './components/PageNotFound';
 import { useEffect } from 'react';
+import SingleSubjectInfo from './items/SingleSubjectInfo';
 
 function App() {
 
@@ -18,7 +19,6 @@ function App() {
       lenis.raf(time)
       requestAnimationFrame(raf)
     }
-
     requestAnimationFrame(raf)
   })
 
@@ -31,7 +31,9 @@ function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/db/attendance" element={<Attendance />} />
           <Route path="/attendance/subject" element={<Attendance />} />
-          <Route path='/db/attendance/addsubject' element={<AddSubject />} />
+          <Route path='/db/attendance/addsubject' element={<AddSubject />}/>
+          <Route path='/db/attendance/Maths' element={<SingleSubjectInfo/>}/>
+          
 
 
 
