@@ -1,51 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /* fon-family */
-  font-family:'Montserrat', sans-serif;
-  
+  font-family: "Montserrat", sans-serif;
 }
-ul,li{
+ul,
+li {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-:root
-{
+:root {
+  --box_width: 350px;
+  --box_height: 350px;
   /* color codes */
-  --main_black_color:#1D1D1D;
-  --medium_white_color:#FFFFFF;
-  --success_green:#78FF75;
-  --danger_red: #FF7C7C;
-  --black_dark_color:#0b0b0b;
-  --light_gray:#3d3d3d ;
-  --light_orage:#ffa641;
+  --main_black_color: #1d1d1d;
+  --medium_white_color: #ffffff;
+  --success_green: #78ff75;
+  --danger_red: #ff7c7c;
+  --black_dark_color: #0b0b0b;
+  --light_gray: #3d3d3d;
+  --light_orage: #ffa641;
+  --light_light_orage: #ffbc6f;
   /* font-sizes-mobile */
-  --mini_fontsize:0.526rem;
-  --medium_fontsize:1rem;
+  --mini_fontsize: 0.96rem;
+  --medium_fontsize: 1rem;
   --main_fontsize: 1.3rem;
-  --bigger_fontsize: 1.76rem;
+  --bigger_fontsize: 1.6rem;
+  --monte_font: "Montserrat", sans-serif;
+  --space_font: "Space Grotesk", sans-serif;
 }
 
-body
-{
+.bigFont {
+  font-family: var(--monte_font);
+  font-size: var(--bigger_fontsize);
+  font-weight: bold;
+}
+
+.mediumFont {
+  font-family: var(--space_font);
+  font-size: var(--medium_fontsize);
+}
+.miniFont {
+  font-family: var(--space_font);
+  font-weight: 300;
+  font-size: var(--mini_fontsize);
+}
+
+body {
   background-color: var(--main_black_color);
   color: var(--medium_white_color);
+  height: 100vh;
+  /* border: 2px solid white; */
 }
 
-a
-{
+a {
   text-decoration: none;
   color: var(--medium_white_color);
 }
 
-
-.appjs
-{
-  display: flex;
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: white;
+}
+::-webkit-slider-thumb {
+  background: var(--main_black_color);
 }
 
+.appjs {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: auto 3fr;
+}
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: auto;
+  height: 100vh;
+  padding: 2rem 0;
+}
+.clickButton {
+  font-size: var(--main_fontsize);
+  font-weight: 600;
+  color: var(--main_black_color);
+  background: var(--medium_white_color);
+  padding: 0.85rem 1.95rem;
+  height: fit-content;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.successBtn {
+  background-color: var(--success_green);
+}
+.dangerBtn {
+  background-color: var(--danger_red);
+}
+.inputButton,
+input {
+  font-size: var(--main_fontsize);
+  font-weight: 400;
+  color: var(--main_black_color);
+  background: var(--medium_white_color);
+  padding: 0.85rem 1.95rem;
+  height: fit-content;
+  border-radius: 0.25rem;
+  margin: 0.25rem 0;
+  outline: none;
+  border: none;
+}
+
+input::placeholder {
+  font-size: var(--mini_fontsize);
+  text-transform: uppercase;
+}
+
+.sqaredContainer {
+  width: var(--box_width);
+  height: var(--box_height);
+  border-radius: 0.85rem;
+}
