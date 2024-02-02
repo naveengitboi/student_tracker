@@ -23,7 +23,7 @@ li {
   --success_green: #78ff75;
   --danger_red: #ff7c7c;
   --black_dark_color: #0b0b0b;
-  --light_gray: #3d3d3d;
+  --light_gray: #4d4d4d;
   --light_orage: #ffa641;
   --light_light_orage: #ffbc6f;
   /* font-sizes-mobile */
@@ -47,8 +47,9 @@ li {
 }
 .miniFont {
   font-family: var(--space_font);
-  font-weight: 300;
+  font-weight: bold;
   font-size: var(--mini_fontsize);
+  color: var(--light_gray);
 }
 
 body {
@@ -130,3 +131,5 @@ input::placeholder {
   height: var(--box_height);
   border-radius: 0.85rem;
 }
+
+
